@@ -25,7 +25,7 @@ import ExperienceSection from './components/sections/ExperienceSection.vue';
 import SkillsSection from './components/sections/SkillsSection.vue';
 import CertificationsSection from './components/sections/CertificationsSection.vue';
 import ContactSection from './components/sections/ContactSection.vue';
-import { setupSmoothScrolling } from './utils/scroll';
+//import { setupSmoothScrolling } from './utils/scroll';
 
 export default {
   name: 'App',
@@ -68,14 +68,14 @@ export default {
       }
 
       // Setup smooth scrolling
-      setupSmoothScrolling([
-        homeSection.value,
-        aboutSection.value,
-        experienceSection.value,
-        skillsSection.value,
-        certificationsSection.value,
-        contactSection.value
-      ]);
+    //   setupSmoothScrolling([
+    //     homeSection.value,
+    //     aboutSection.value,
+    //     experienceSection.value,
+    //     skillsSection.value,
+    //     certificationsSection.value,
+    //     contactSection.value
+    // ], mainContent.value);
     });
 
     // Update body class when dark mode changes

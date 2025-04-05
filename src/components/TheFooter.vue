@@ -3,7 +3,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <h3>Portfolio</h3>
+          <h3>JAGADESHWARAN</h3>
           <p>Thank you for visiting my portfolio. Let's connect!</p>
         </div>
         
@@ -19,17 +19,17 @@
         <div class="footer-social">
           <h4>Connect With Me</h4>
           <div class="social-icons">
-            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/jagadeshwaran-k-5b504321a/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/JagadeshwaranK" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/JAGADES68462368?t=sj1YEthbQpmcys5KdAxINg&s=09" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:jagadesh.k3008@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
           </div>
         </div>
       </div>
       
-      <div class="footer-bottom">
+      <!-- <div class="footer-bottom">
         <p>&copy; {{ currentYear }} Professional Portfolio. All Rights Reserved.</p>
-      </div>
+      </div> -->
     </div>
   </footer>
 </template>
@@ -59,7 +59,7 @@ export default {
     
     return {
       navLinks,
-      currentYear
+      // currentYear
     };
   }
 };

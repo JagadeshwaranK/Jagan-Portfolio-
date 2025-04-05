@@ -41,46 +41,20 @@ export default {
     // Sample experience data
     const experiences = [
       {
-        role: 'Senior Pega Developer',
-        company: 'Tech Solutions Inc.',
-        location: 'New York, NY',
-        startYear: '2020',
-        endYear: null, // null for present
-        details: [
-          'Led a team of 5 developers in implementing Pega Platform solutions for enterprise clients',
-          'Designed and developed customer service applications that improved efficiency by 35%',
-          'Implemented CI/CD pipelines for Pega applications to streamline deployment',
-          'Collaborated with stakeholders to gather requirements and translate them into technical specifications'
-        ],
-        technologies: ['Pega', 'Agile', 'Java', 'REST API', 'SQL']
-      },
-      {
         role: 'Pega Developer',
-        company: 'Global Systems Ltd.',
-        location: 'Boston, MA',
-        startYear: '2018',
-        endYear: '2020',
+        company: 'Cognizant Technology Solutions',
+        location: 'Chennai, India',
+        startYear: '2022',
+        endYear: '2024',
         details: [
-          'Developed Pega applications for banking and financial services clients',
-          'Created reusable components that reduced development time by 25%',
-          'Performed system analysis and performance optimization',
-          'Conducted knowledge transfer sessions for junior developers'
-        ],
-        technologies: ['Pega', 'JavaScript', 'HTML/CSS', 'Oracle DB']
-      },
-      {
-        role: 'Software Engineer',
-        company: 'Innovative Software',
-        location: 'San Francisco, CA',
-        startYear: '2016',
-        endYear: '2018',
-        details: [
-          'Developed full-stack web applications using modern JavaScript frameworks',
-          'Implemented responsive user interfaces for client applications',
-          'Participated in code reviews and maintained coding standards',
-          'Assisted in migrating legacy systems to modern architectures'
-        ],
-        technologies: ['JavaScript', 'React', 'Node.js', 'MongoDB', 'AWS']
+          'End-to-End Case Life Cycle Development: Designed and implemented processes for diverse applications, ensuring scalability and maintainability.',
+          'API Integration: Configured REST APIs and services using REST connectors, seamlessly managing customer records through connectors, endpoint URLs, and Data Transforms.',
+          'Data Accuracy Improvement: Enhanced data accuracy by 15% with Data Transforms and Data Pages, streamlining operations for better performance.',
+          'Process Reliability: Reduced SLA violations by 10% through the creation and management of Service-Level Agreements (SLAs) with escalation protocols for timely task completion.',
+          'User Interface Enhancement: Developed Business Process Flows, Flow Actions, and UI components using CSS, HTML, and JavaScript to improve UI consistency and user experience.',
+          'Debugging Expertise: Leveraged tools like Tracer, Live UI, and Clipboard for effective issue resolution, ensuring smooth application operation.',
+                  ],
+        technologies: ['Pega', 'Agile', 'Java', 'REST API', 'SQL', 'SLA', 'Javascript']
       }
     ];
     
@@ -143,12 +117,13 @@ export default {
     width: 2px;
     background-color: $light-border;
     
+    
     .dark-mode & {
       background-color: $dark-border;
     }
     
     @media (max-width: $breakpoint-md) {
-      left: 20px;
+      left: 1px;
     }
   }
   

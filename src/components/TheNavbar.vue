@@ -2,7 +2,7 @@
   <nav class="navbar" :class="{ 'dark-mode': isDarkMode, 'scrolled': isScrolled }">
     <div class="container navbar-container">
       <div class="navbar-logo">
-        <span>Portfolio</span>
+        <span>JAGADESHWARAN K</span>
       </div>
       
       <div class="navbar-menu" :class="{ 'active': mobileMenuOpen }">
@@ -28,17 +28,17 @@ import { ref, onMounted, onUnmounted } from 'vue';
 import DarkModeToggle from './ui/DarkModeToggle.vue';
 
 export default {
-  name: 'TheNavbar',
-  components: {
-    DarkModeToggle
-  },
-  props: {
-    isDarkMode: {
-      type: Boolean,
-      default: false
-    }
-  },
-  emits: ['toggle-dark-mode'],
+  // name: 'TheNavbar',
+  // components: {
+  //   DarkModeToggle
+  // },
+  // props: {
+  //   isDarkMode: {
+  //     type: Boolean,
+  //     default: false
+  //   }
+  // },
+  // emits: ['toggle-dark-mode'],
   setup() {
     const isScrolled = ref(false);
     const mobileMenuOpen = ref(false);

@@ -8,9 +8,9 @@
       <p class="certificate-issuer">
         <i class="fas fa-building"></i> {{ certificate.issuer }}
       </p>
-      <p class="certificate-date">
+      <!-- <p class="certificate-date">
         <i class="fas fa-calendar-alt"></i> {{ certificate.date }}
-      </p>
+      </p> -->
       <p class="certificate-desc">{{ certificate.description }}</p>
       <div class="certificate-actions">
         <a v-if="certificate.credentialUrl" :href="certificate.credentialUrl" target="_blank" class="btn btn-outline">

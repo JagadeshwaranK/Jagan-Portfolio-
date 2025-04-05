@@ -42,42 +42,58 @@ export default {
       {
         name: 'Pega Certified System Architect (PCSA)',
         issuer: 'Pegasystems Inc.',
-        date: 'June 2022',
-        description: 'Certified in designing and building applications on the Pega Platform, implementing best practices for application development.',
-        icon: 'fas fa-certificate',
-        credentialUrl: '#'
+        //date: 'December 2022',
+        description: 'Demonstrated expertise in designing and implementing core Pega Platform features including case design, data modeling, and UI development using Pega best practices.',
+        icon: 'fas fa-robot',
+        //credentialUrl: '#'
       },
       {
-        name: 'Certified Full Stack Developer',
-        issuer: 'Tech Academy',
-        date: 'March 2021',
-        description: 'Comprehensive certification in full-stack web development covering front-end and back-end technologies.',
-        icon: 'fas fa-laptop-code',
-        credentialUrl: '#'
+        name: 'Pega Certified Senior System Architect (PCSSA)',
+        issuer: 'Pegasystems Inc.',
+        //date: 'June 2024',
+        description: 'Advanced certification validating skills in complex application design, integration services, and performance optimization on the Pega Platform.',
+        icon: 'fas fa-robot',
+        //credentialUrl: '#'
       },
       {
-        name: 'AWS Certified Developer Associate',
-        issuer: 'Amazon Web Services',
-        date: 'November 2020',
-        description: 'Certification validating expertise in developing, deploying, and debugging cloud-based applications using AWS.',
-        icon: 'fab fa-aws',
-        credentialUrl: '#'
+        name: 'The Fundamentals of Digital Marketing',
+        issuer: 'Google',
+       //date: 'March 2021',
+        description: 'Certified in essential digital marketing concepts including SEO, content marketing, social media, and analytics through Google\'s interactive learning platform.',
+        icon: "fab fa-google",
+        //credentialUrl: '#'
       },
       {
-        name: 'Certified Scrum Master',
-        issuer: 'Scrum Alliance',
-        date: 'July 2019',
-        description: 'Certification in Scrum methodologies, principles, and practices for effective agile project management.',
-        icon: 'fas fa-users-cog',
-        credentialUrl: '#'
+        name: 'Data Analytics and Visualization',
+        issuer: 'Forage',
+        //date: 'November 2020',
+        description: 'Hands-on certification covering data analysis techniques, visualization tools, and deriving business insights from complex datasets.',
+        icon: "fas fa-chart-line",
+        //credentialUrl: '#'
       },
       {
-        name: 'UI/UX Design Professional',
-        issuer: 'Design Institute',
-        date: 'February 2019',
-        description: 'Certification in user interface and experience design principles, including wireframing, prototyping, and user testing.',
-        icon: 'fas fa-palette',
-        credentialUrl: '#'
+        name: 'Generative AI Fundamentals',
+        issuer: 'Cognizant',
+        //date: 'July 2019',
+        description: 'Comprehensive understanding of generative AI concepts, applications, and ethical considerations in enterprise environments.',
+        icon: 'fas fa-brain',
+        //credentialUrl: '#'
+      },
+      {
+        name: 'SQL',
+        issuer: 'Udemy',
+        //date: 'February 2019',
+        description: 'Certification in database management, complex query writing, and data manipulation using Structured Query Language (SQL).',
+        icon: 'fas fa-database',
+        //credentialUrl: '#'
+      },
+      {
+        name: 'Agile methodology and Jira software tool',
+        issuer: 'KARE',
+        //date: 'February 2019',
+        description: 'Practical certification in Agile project management methodologies and proficient use of Jira for sprint planning, tracking, and reporting.',
+        icon: 'fab fa-jira',
+        //credentialUrl: '#'
       }
     ];
     

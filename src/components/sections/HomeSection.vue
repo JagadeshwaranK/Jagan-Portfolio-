@@ -4,7 +4,7 @@
       <div class="greeting-text" :class="{ 'fade-in': isVisible }">
         <span>Hello, I'm</span>
       </div>
-      <h1 class="name-text" :class="{ 'fade-in': isVisible }">Your Name</h1>
+      <h1 class="name-text" :class="{ 'fade-in': isVisible }">JAGADESHWARAN</h1>
       <div class="auto-type" :class="{ 'fade-in': isVisible }">
         <span ref="typeTarget"></span>
       </div>
@@ -49,7 +49,6 @@ export default {
       'Pega Developer',
       'Software Engineer',
       'Web Developer',
-      'UI/UX Designer',
       'Tech Enthusiast'
     ];
     

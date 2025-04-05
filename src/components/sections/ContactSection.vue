@@ -5,6 +5,18 @@
         <h2>Get In Touch</h2>
       </div>
       
+      <!-- <div class="info-items">
+            <div class="info-item">
+              <div class="icon-container">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-details">
+                <h4>Location</h4>
+                <p>Madurai, Tamil Nadu</p>
+              </div>
+            </div>
+      </div> -->
+
       <div class="contact-content">
         <div class="contact-info" :class="{ 'visible': isInView }">
           <h3>Contact Information</h3>
@@ -13,21 +25,11 @@
           <div class="info-items">
             <div class="info-item">
               <div class="icon-container">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="info-details">
-                <h4>Location</h4>
-                <p>Your City, Country</p>
-              </div>
-            </div>
-            
-            <div class="info-item">
-              <div class="icon-container">
                 <i class="fas fa-envelope"></i>
               </div>
               <div class="info-details">
                 <h4>Email</h4>
-                <p>youremail@example.com</p>
+                <p>jagadesh.k3008@gmail.com</p>
               </div>
             </div>
             
@@ -37,41 +39,89 @@
               </div>
               <div class="info-details">
                 <h4>Phone</h4>
-                <p>+1234567890</p>
+                <p>+917826016047</p>
               </div>
             </div>
           </div>
           
           <div class="social-links">
-            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jagadeshwaran-k-5b504321a/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/JagadeshwaranK" target="_blank" rel="noopener noreferrer" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/JAGADES68462368?t=sj1YEthbQpmcys5KdAxINg&s=09" target="_blank" rel="noopener noreferrer" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/jagadesh_3014?igsh=MWk5OGVuZ2cyYzU2ag==" target="_blank" rel="noopener noreferrer" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
           </div>
         </div>
         
         <div class="contact-form" :class="{ 'visible': isInView }">
           <h3>Send Message</h3>
-          <form @submit.prevent="submitForm">
+          <form 
+            @submit.prevent="submitForm"
+            netlify
+            netlify-honeypot="bot-field"
+            name="contact"
+            data-netlify-recaptcha="true"
+          >
+            <!-- Hidden Netlify Form Fields -->
+            <input type="hidden" name="form-name" value="contact">
+            <input type="text" name="bot-field" style="display: none;">
+            
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" v-model="formData.name" required placeholder="Your Name">
+              <input 
+                type="text" 
+                id="name" 
+                name="name"
+                v-model="formData.name" 
+                required 
+                placeholder="Your Name"
+              >
             </div>
             
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" v-model="formData.email" required placeholder="Your Email">
+              <input 
+                type="email" 
+                id="email" 
+                name="email"
+                v-model="formData.email" 
+                required 
+                placeholder="Your Email"
+              >
             </div>
             
             <div class="form-group">
               <label for="subject">Subject</label>
-              <input type="text" id="subject" v-model="formData.subject" required placeholder="Subject">
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject"
+                v-model="formData.subject" 
+                required 
+                placeholder="Subject"
+              >
             </div>
             
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" v-model="formData.message" required placeholder="Your Message"></textarea>
+              <textarea 
+                id="message" 
+                name="message"
+                v-model="formData.message" 
+                required 
+                placeholder="Your Message"
+              ></textarea>
             </div>
+            
+            <!-- Netlify reCAPTCHA -->
+            <div data-netlify-recaptcha="true"></div>
             
             <button type="submit" class="btn" :disabled="isSubmitting">
               <span v-if="isSubmitting"><i class="fas fa-spinner fa-spin"></i> Sending...</span>

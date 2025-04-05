@@ -78,7 +78,6 @@ export default {
       { name: 'Node.js', icon: 'fab fa-node-js' },
       { name: 'Git', icon: 'fab fa-git-alt' },
       { name: 'Docker', icon: 'fab fa-docker' },
-      { name: 'AWS', icon: 'fab fa-aws' },
       { name: 'MongoDB', icon: 'fas fa-server' },
       { name: 'Sass', icon: 'fab fa-sass' }
     ];
@@ -97,11 +96,11 @@ export default {
     
     // Core skills with percentages
     const coreSkills = [
-      { name: 'Pega Development', percentage: 95 },
-      { name: 'Front-end Development', percentage: 90 },
+      { name: 'Pega Development', percentage: 75 },
+      { name: 'Front-end Development', percentage: 80 },
       { name: 'Back-end Development', percentage: 85 },
       { name: 'Database Design', percentage: 80 },
-      { name: 'UI/UX Design', percentage: 75 }
+      { name: 'UI/UX Design', percentage: 70 }
     ];
     
     const checkIfInView = () => {
