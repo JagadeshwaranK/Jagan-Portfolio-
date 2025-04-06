@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <button class="dark-mode-toggle" @click="$emit('toggle')" :title="toggleTitle">
     <div class="toggle-icon">
       <i :class="iconClass"></i>
@@ -81,4 +81,4 @@ export default {
     }
   }
 }
-</style>
+</style> -->
