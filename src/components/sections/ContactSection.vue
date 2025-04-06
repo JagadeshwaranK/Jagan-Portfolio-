@@ -72,6 +72,7 @@
             <!-- Hidden Netlify Form Fields -->
             <input type="hidden" name="form-name" value="contact">
             <input type="text" name="bot-field" style="display: none;">
+            <input type="hidden" name="recipient" value="jagadesh.k3008@gmail.com">
             
             <div class="form-group">
               <label for="name">Name</label>
@@ -166,43 +167,13 @@ export default {
       message: ''
     });
     
-    const submitForm = async () => {
-      // Set submitting state
+    const submitForm = () => {
       isSubmitting.value = true;
       
-      try {
-        // Simulate form submission (would be replaced with actual API call)
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        
-        // Show success message
-        formStatus.show = true;
-        formStatus.success = true;
-        formStatus.message = 'Your message has been sent successfully!';
-        
-        // Reset form
-        formData.name = '';
-        formData.email = '';
-        formData.subject = '';
-        formData.message = '';
-        
-        // Hide status message after 5 seconds
-        setTimeout(() => {
-          formStatus.show = false;
-        }, 5000);
-      } catch (error) {
-        // Show error message
-        formStatus.show = true;
-        formStatus.success = false;
-        formStatus.message = 'There was a problem sending your message. Please try again.';
-        
-        // Hide status message after 5 seconds
-        setTimeout(() => {
-          formStatus.show = false;
-        }, 5000);
-      } finally {
-        // Reset submitting state
-        isSubmitting.value = false;
-      }
+      // Netlify will handle the form submission
+      // We just need to let the HTML form submit normally
+      // after setting the form-name field
+      document.querySelector('form').submit();
     };
     
     const checkIfInView = () => {
