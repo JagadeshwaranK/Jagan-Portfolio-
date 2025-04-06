@@ -9,7 +9,7 @@
         <span ref="typeTarget"></span>
       </div>
       <div class="actions" :class="{ 'fade-in': isVisible }">
-        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
         <a href="#about" class="btn btn-outline">Learn More</a>
       </div>
       <div class="scroll-down">

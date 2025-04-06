@@ -25,7 +25,7 @@
 
 <script>
 import { ref, onMounted, onUnmounted } from 'vue';
-import DarkModeToggle from './ui/DarkModeToggle.vue';
+//import DarkModeToggle from './ui/DarkModeToggle.vue';
 
 export default {
   // name: 'TheNavbar',

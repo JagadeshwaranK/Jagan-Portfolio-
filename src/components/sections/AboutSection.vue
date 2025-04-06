@@ -36,7 +36,7 @@
           </div>
           
           <div class="about-actions">
-            <a href="#contact" class="btn">Get In Touch</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
             <a href="/assets/resume.pdf" download="JAGADESHWARAN K_SOFTWARE ENGINEER.pdf" class="btn btn-outline">Download CV</a>
           </div>
         </div>
