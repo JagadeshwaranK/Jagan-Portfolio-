@@ -25,7 +25,6 @@ import ExperienceSection from './components/sections/ExperienceSection.vue';
 import SkillsSection from './components/sections/SkillsSection.vue';
 import CertificationsSection from './components/sections/CertificationsSection.vue';
 import ContactSection from './components/sections/ContactSection.vue';
-//import { setupSmoothScrolling } from './utils/scroll';
 
 export default {
   name: 'App',
@@ -40,7 +39,7 @@ export default {
     ContactSection
   },
   setup() {
-    const isDarkMode = ref(false);
+    const isDarkMode = ref(false); // Force light mode by default
     const mainContent = ref(null);
     const homeSection = ref(null);
     const aboutSection = ref(null);
@@ -54,19 +53,7 @@ export default {
       localStorage.setItem('darkMode', isDarkMode.value);
     };
 
-    // Check for user's preferred theme
     onMounted(() => {
-      // Check saved preference
-      const savedTheme = localStorage.getItem('darkMode');
-      
-      if (savedTheme !== null) {
-        isDarkMode.value = savedTheme === 'true';
-      } else {
-        // Check system preference
-        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        isDarkMode.value = prefersDarkMode;
-      }
-
       // Setup smooth scrolling
     //   setupSmoothScrolling([
     //     homeSection.value,
