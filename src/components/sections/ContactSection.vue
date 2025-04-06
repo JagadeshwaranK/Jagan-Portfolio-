@@ -71,8 +71,8 @@
           >
             <!-- Hidden Netlify Form Fields -->
             <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="subject" value="New Contact Form Submission">
             <input type="text" name="bot-field" style="display: none;">
-            <input type="hidden" name="recipient" value="jagadesh.k3008@gmail.com">
             
             <div class="form-group">
               <label for="name">Name</label>
