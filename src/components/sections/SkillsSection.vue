@@ -78,8 +78,8 @@ export default {
       { name: 'Node.js', icon: 'fab fa-node-js' },
       { name: 'Git', icon: 'fab fa-git-alt' },
       { name: 'Docker', icon: 'fab fa-docker' },
-      { name: 'MongoDB', icon: 'fas fa-server' },
-      { name: 'Sass', icon: 'fab fa-sass' }
+      { name: 'MongoDB', icon: 'fas fa-server' }
+      // { name: 'Sass', icon: 'fab fa-sass' }
     ];
     
     // Soft skills
@@ -144,7 +144,7 @@ export default {
 @import '../../assets/styles/variables';
 
 .skills-section {
-  background-color: $light-bg;
+  background-color: dark-bg;
   transition: background-color $transition-normal;
   
   &.dark-mode {
@@ -153,14 +153,14 @@ export default {
 }
 
 .skills-categories {
-  margin-bottom: $spacing-xxl;
+  margin-bottom: $spacing-xl;
 }
 
 .category {
   margin-bottom: $spacing-xl;
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.8s ease, transform 0.5s ease;
   
   &.visible {
     opacity: 1;

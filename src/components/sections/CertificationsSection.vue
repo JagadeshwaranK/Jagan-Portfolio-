@@ -135,7 +135,7 @@ export default {
 @import '../../assets/styles/variables';
 
 .certifications-section {
-  background-color: darken($light-bg, 2%);
+  background-color: dark-bg;
   transition: background-color $transition-normal;
   
   &.dark-mode {
@@ -160,6 +160,7 @@ export default {
     &.visible {
       opacity: 1;
       transform: translateY(0);
+    
     }
   }
 }

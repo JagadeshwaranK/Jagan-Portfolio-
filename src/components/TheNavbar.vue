@@ -28,17 +28,17 @@ import { ref, onMounted, onUnmounted } from 'vue';
 import DarkModeToggle from './ui/DarkModeToggle.vue';
 
 export default {
-  // name: 'TheNavbar',
-  // components: {
-  //   DarkModeToggle
-  // },
-  // props: {
-  //   isDarkMode: {
-  //     type: Boolean,
-  //     default: false
-  //   }
-  // },
-  // emits: ['toggle-dark-mode'],
+  name: 'TheNavbar',
+  components: {
+    DarkModeToggle
+  },
+  props: {
+    isDarkMode: {
+      type: Boolean,
+      default: false
+    }
+  },
+  emits: ['toggle-dark-mode'],
   setup() {
     const isScrolled = ref(false);
     const mobileMenuOpen = ref(false);
@@ -48,6 +48,7 @@ export default {
       { id: 'about', label: 'About' },
       { id: 'experience', label: 'Experience' },
       { id: 'skills', label: 'Skills' },
+      { id: 'projects', label: 'Projects' },
       { id: 'certifications', label: 'Certifications' },
       { id: 'contact', label: 'Contact' }
     ];

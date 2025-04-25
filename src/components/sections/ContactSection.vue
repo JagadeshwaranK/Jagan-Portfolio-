@@ -169,22 +169,34 @@ export default {
     const submitForm = async () => {
       // Set submitting state
       isSubmitting.value = true;
-      
+
+      // Prepare form data for Netlify
+      const form = new FormData();
+      form.append('form-name', 'contact');
+      form.append('name', formData.name);
+      form.append('email', formData.email);
+      form.append('subject', formData.subject);
+      form.append('message', formData.message);
+
       try {
-        // Simulate form submission (would be replaced with actual API call)
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        
+        // Send form data to Netlify
+        await fetch('/', {
+          method: 'POST',
+          body: form,
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+        });
+
         // Show success message
         formStatus.show = true;
         formStatus.success = true;
         formStatus.message = 'Your message has been sent successfully!';
-        
+
         // Reset form
         formData.name = '';
         formData.email = '';
         formData.subject = '';
         formData.message = '';
-        
+
         // Hide status message after 5 seconds
         setTimeout(() => {
           formStatus.show = false;
@@ -194,7 +206,7 @@ export default {
         formStatus.show = true;
         formStatus.success = false;
         formStatus.message = 'There was a problem sending your message. Please try again.';
-        
+
         // Hide status message after 5 seconds
         setTimeout(() => {
           formStatus.show = false;
@@ -246,7 +258,7 @@ export default {
 @import '../../assets/styles/variables';
 
 .contact-section {
-  background-color: $light-bg;
+  background-color: dark-bg;
   transition: background-color $transition-normal;
   
   &.dark-mode {

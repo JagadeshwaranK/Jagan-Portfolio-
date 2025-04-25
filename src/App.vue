@@ -7,6 +7,7 @@
       <AboutSection id="about" ref="aboutSection" />
       <ExperienceSection id="experience" ref="experienceSection" />
       <SkillsSection id="skills" ref="skillsSection" />
+      <ProjectsSection id="projects" ref="projectsSection" />
       <CertificationsSection id="certifications" ref="certificationsSection" />
       <ContactSection id="contact" ref="contactSection" />
     </main>
@@ -24,6 +25,7 @@ import AboutSection from './components/sections/AboutSection.vue';
 import ExperienceSection from './components/sections/ExperienceSection.vue';
 import SkillsSection from './components/sections/SkillsSection.vue';
 import CertificationsSection from './components/sections/CertificationsSection.vue';
+import ProjectsSection from './components/sections/ProjectsSection.vue';
 import ContactSection from './components/sections/ContactSection.vue';
 //import { setupSmoothScrolling } from './utils/scroll';
 
@@ -36,6 +38,7 @@ export default {
     AboutSection,
     ExperienceSection,
     SkillsSection,
+    ProjectsSection,
     CertificationsSection,
     ContactSection
   },
@@ -46,6 +49,7 @@ export default {
     const aboutSection = ref(null);
     const experienceSection = ref(null);
     const skillsSection = ref(null);
+    const projectsSection = ref(null);
     const certificationsSection = ref(null);
     const contactSection = ref(null);
 
@@ -96,6 +100,7 @@ export default {
       homeSection,
       aboutSection,
       experienceSection,
+      projectsSection,
       skillsSection,
       certificationsSection,
       contactSection

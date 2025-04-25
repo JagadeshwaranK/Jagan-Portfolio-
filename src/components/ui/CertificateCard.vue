@@ -57,6 +57,35 @@ export default {
   &.dark-mode {
     background-color: $dark-card-bg;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    .certificate-content {
+      h3 {
+        color: $dark-text;
+      }
+
+      .certificate-issuer,
+      .certificate-date {
+        color: $dark-secondary-text;
+
+        i {
+          color: lighten($primary-color, 10%);
+        }
+      }
+
+      .certificate-desc {
+        color: $dark-secondary-text;
+      }
+
+      .certificate-actions {
+        a {
+          color: $dark-text;
+
+          &:hover {
+            color: lighten($primary-color, 15%);
+          }
+        }
+      }
+    }
   }
   
   @media (max-width: $breakpoint-sm) {
@@ -92,7 +121,7 @@ export default {
     color: $light-text;
     
     .dark-mode & {
-      color: $dark-text;
+      color: $light-text;
     }
   }
   

@@ -95,11 +95,11 @@ export default {
 @import '../../assets/styles/variables';
 
 .experience-section {
-  background-color: darken($light-bg, 2%);
+  background-color: dark-bg;
   transition: background-color $transition-normal;
   
   &.dark-mode {
-    background-color: darken($dark-bg, 2%);
+    background-color: $dark-bg;
   }
 }
 
@@ -123,7 +123,7 @@ export default {
     }
     
     @media (max-width: $breakpoint-md) {
-      left: 1px;
+      left: -5px;
     }
   }
   

@@ -35,8 +35,8 @@
             </div>
           </div>
           
-          <div class="about-actions">
-            <a href="#contact" class="btn">Get In Touch</a>
+          <div class="about-actions" :class="{ 'visible': isInView }">
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
             <a href="/assets/resume.pdf" download="JAGADESHWARAN K_SOFTWARE ENGINEER.pdf" class="btn btn-outline">Download CV</a>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default {
 @import '../../assets/styles/variables';
 
 .about-section {
-  background-color: $light-bg;
+  background-color: dark-bg;
   transition: background-color $transition-normal;
   
   &.dark-mode {
@@ -242,6 +242,17 @@ export default {
     .btn {
       width: 100%;
       text-align: center;
+      color: $light-text;
+    }
+  }
+
+  .btn {
+    color: inherit;
+  }
+
+  .dark-mode & {
+    .btn {
+      color: $light-text;
     }
   }
 }
